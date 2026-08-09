@@ -2,20 +2,11 @@ body {
     background-color: #111315;
     color: white;
     font-family: Inter, sans-serif;
-
-    max-width: 900px;
-    margin: 0;
-
     line-height: 1.6;
+    margin: 0;
 }
 
 h1 {
-    color: #E5E7EB;
-    font-size: 60px;
-    margin-bottom: 10px;
-}
-
-h2 {
     color: #E5E7EB;
     font-size: 36px;
 }
@@ -29,6 +20,7 @@ p {
     max-width: 900px;
     margin: auto;
     padding: 60px 40px;
+    box-sizing: border-box;
 }
 
 button {
@@ -44,3 +36,39 @@ button {
 #backHome {
     display: block;
     margin-top: 20px;}
+
+    nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #111315;
+    padding: 20px 40px 30px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+    .logo {
+    width: 100%;
+    text-align: center;
+    color: #E5E7EB;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 11vw;
+    }
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    width: 100%;
+    transform: translateX(270px);
+}
+
+
+.nav-links a {
+    color: #E5E7EB;
+    text-decoration: none;
+}
+
