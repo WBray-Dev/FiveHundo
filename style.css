@@ -40,6 +40,7 @@ button {
     nav {
     position: sticky;
     top: 0;
+    z-index: 100;
     width: 100%;
     box-sizing: border-box;
     background-color: #111315;
@@ -61,14 +62,112 @@ button {
 .nav-links {
     display: flex;
     gap: 25px;
-    justify-content: center;
+    justify-content: flex-end;
     width: 100%;
-    transform: translateX(270px);
+    padding-right: 230px;
+    box-sizing: border-box;
 }
-
 
 .nav-links a {
     color: #E5E7EB;
     text-decoration: none;
 }
 
+.review-card {
+    display: block;
+    max-width: 900px;
+    margin: 80px auto;
+    text-decoration: none;
+    color: #E5E7EB;
+    transition: opacity 0.2s ease;
+}
+
+.review-card img {
+    width: 100%;
+    height: auto;
+    max-width: 700px;
+    margin: auto;
+    display: block;
+}
+
+.review-info {
+    padding: 25px 0;
+}
+
+.genre {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.review-info h2 {
+    font-size: 2rem;
+    margin: 0 0 5px;
+}
+
+.artist {
+    margin: 0 0 20px;
+    font-size: 1rem;
+}
+
+.summary {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin-bottom: 15px;
+}
+
+.author {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.review-card:hover {
+    opacity: 0.8;
+}
+
+.review-image {
+    width: 100%;
+    max-width: 700px;
+    display: block;
+    margin: 40px auto;
+}
+
+.review-page .genre {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.review-page h1 {
+    font-size: clamp(3rem, 7vw, 6rem);
+    line-height: 1;
+    margin: 0;
+}
+
+.review-page .artist {
+    font-size: 1.5rem;
+    margin-top: 15px;
+}
+
+.review-text {
+    max-width: 700px;
+    margin: 30px auto;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.review-heading {
+    max-width: 700px;
+    margin: 60px auto 20px;
+    font-size: 2rem;
+}
+
+.review-page {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 60px 40px;
+    box-sizing: border-box;
+}
