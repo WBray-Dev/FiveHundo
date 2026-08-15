@@ -194,6 +194,11 @@ button {
 
 @media (max-width: 600px) {
 
+     nav {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
     .nav-links {
         position: fixed;
         bottom: 0;
