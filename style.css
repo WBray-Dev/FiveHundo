@@ -222,8 +222,10 @@ button {
     }
 
     .review-card {
-        margin-left: 23px;
-        margin-right: 23px;
+       margin-top: 30px;
+       margin-right: 23px;
+       margin-bottom: 30px;
+       margin-left: 23px;
     }
 
 }
