@@ -197,3 +197,14 @@ button {
     }
 
 }
+.nav-links {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    justify-content: space-around;
+    padding: 15px 0;
+
+    background-color: var(--background);
+}
