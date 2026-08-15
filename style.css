@@ -199,6 +199,12 @@ button {
         padding-right: 20px;
     }
     
+    .logo {
+        font-size: 15vw;
+        line-height: 1;
+        white-space: nowrap;
+    }
+    
     .nav-links {
         position: fixed;
         bottom: 0;
