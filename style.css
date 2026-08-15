@@ -1,18 +1,33 @@
+:root {
+    --background: #ffffff;
+    --text: #111315;
+    --muted-text: #4b5563;
+    --accent: #e63946;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: #111315;
+        --text: #E5E7EB;
+        --muted-text: #9CA3AF;
+    }
+}
+
 body {
-    background-color: #111315;
-    color: white;
+    background-color: var(--background);
+    color: var(--text);
     font-family: Inter, sans-serif;
     line-height: 1.6;
     margin: 0;
 }
 
 h1 {
-    color: #E5E7EB;
+    color: var(--text);
     font-size: 36px;
 }
 
 p {
-    color: #E5E7EB;
+    color: var(--text);
     font-size: 1.25rem;
 }
 
@@ -24,7 +39,7 @@ p {
 }
 
 button {
-    background-color: #e63946;
+    background-color: var(--accent);
     color: white;
     border: none;
     padding: 12px 20px;
@@ -43,7 +58,7 @@ button {
     z-index: 100;
     width: 100%;
     box-sizing: border-box;
-    background-color: #111315;
+    background-color: var(--background);
     padding: 20px 40px 30px;
 
     display: flex;
@@ -53,7 +68,7 @@ button {
     .logo {
     width: 100%;
     text-align: center;
-    color: #E5E7EB;
+    color: var(--text);
     text-decoration: none;
     font-weight: 700;
     font-size: 11vw;
@@ -68,8 +83,9 @@ button {
     box-sizing: border-box;
 }
 
-.nav-links a {
-    color: #E5E7EB;
+.nav-links a,
+.back-reviews {
+    color: var(--text);
     text-decoration: none;
 }
 
@@ -78,7 +94,7 @@ button {
     max-width: 900px;
     margin: 80px auto;
     text-decoration: none;
-    color: #E5E7EB;
+    color: var(--text);
     transition: opacity 0.2s ease;
 }
 
