@@ -187,3 +187,13 @@ button {
     padding: 60px 40px;
     box-sizing: border-box;
 }
+
+@media (max-width: 600px) {
+
+    .nav-links {
+        justify-content: center;
+        padding-right: 0;
+        gap: 20px;
+    }
+
+}
