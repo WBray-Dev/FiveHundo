@@ -26,24 +26,47 @@ if (button) {
 
 }
 
+/*
+PUBLISHED REVIEWS
 
-const albums = [
-    "Songs for the Deaf",
-    "Who Let the Dogs Out",
-    "Little Miss Twain"
+Add the filename of every new review to this list.
+Do not add review-template.html.
+*/
+
+const reviews = [
+    "all-the-young-dudes.html",
+    "post-pop-depression.html",
+    "songs-for-the-deaf.html",
+    "the-car.html",
+    "the-english-riviera.html"
 ];
 
-const randomButton = document.getElementById("randomButton");
-const randomAlbum = document.getElementById("randomAlbum");
+function goToRandomReview() {
 
-if (randomButton) {
+    const randomIndex = Math.floor(Math.random() * reviews.length);
+    const randomReview = reviews[randomIndex];
 
-    randomButton.addEventListener("click", function() {
+    const inReviewsFolder = window.location.pathname.includes("/reviews/");
 
-        const randomIndex = Math.floor(Math.random() * albums.length);
+    if (inReviewsFolder) {
+        window.location.href = randomReview;
+    } else {
+        window.location.href = "reviews/" + randomReview;
+    }
+}
 
-        randomAlbum.textContent = albums[randomIndex];
+const randomNav = document.getElementById("randomNav");
 
+if (randomNav) {
+
+    randomNav.addEventListener("click", function(event) {
+        event.preventDefault();
+        goToRandomReview();
     });
 
 }
+
+/*
+RIP random.html, 10 August–15 August 2026.
+It died doing fuck all. 🪦
+*/
