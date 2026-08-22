@@ -33,12 +33,19 @@ Add the filename of every new review to this list.
 Do not add review-template.html.
 */
 
-const reviews = [
+/*
+Dummy Reviews
     "all-the-young-dudes.html",
     "post-pop-depression.html",
     "songs-for-the-deaf.html",
     "the-car.html",
     "the-english-riviera.html"
+];
+*/
+
+
+const reviews = [
+    "hotel-california.html"
 ];
 
 function goToRandomReview() {

@@ -13,6 +13,11 @@
     }
 }
 
+
+/* =========================
+   GLOBAL
+   ========================= */
+
 body {
     background-color: var(--background);
     color: var(--text);
@@ -38,6 +43,11 @@ p {
     box-sizing: border-box;
 }
 
+
+/* =========================
+   BUTTONS
+   ========================= */
+
 button {
     background-color: var(--accent);
     color: white;
@@ -48,11 +58,18 @@ button {
     font-weight: bold;
     cursor: pointer;
 }
+
 #backHome {
     display: block;
-    margin-top: 20px;}
+    margin-top: 20px;
+}
 
-    nav {
+
+/* =========================
+   NAVIGATION
+   ========================= */
+
+nav {
     position: sticky;
     top: 0;
     z-index: 100;
@@ -65,14 +82,14 @@ button {
     flex-direction: column;
 }
 
-    .logo {
+.logo {
     width: 100%;
     text-align: center;
     color: var(--text);
     text-decoration: none;
     font-weight: 700;
     font-size: 11vw;
-    }
+}
 
 .nav-links {
     display: flex;
@@ -88,6 +105,11 @@ button {
     color: var(--text);
     text-decoration: none;
 }
+
+
+/* =========================
+   REVIEW CARDS
+   ========================= */
 
 .review-card {
     display: block;
@@ -142,6 +164,24 @@ button {
     opacity: 0.8;
 }
 
+
+/* =========================
+   REVIEW PAGE
+   ========================= */
+
+.review-page {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 60px 40px;
+    box-sizing: border-box;
+}
+
+.review-header {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .review-image {
     width: 100%;
     max-width: 700px;
@@ -158,9 +198,11 @@ button {
 }
 
 .review-page h1 {
-    font-size: clamp(3rem, 7vw, 6rem);
-    line-height: 1;
+    width: 100%;
+    font-size: clamp(3rem, 9vw, 6rem);
+    line-height: 0.95;
     margin: 0;
+    white-space: nowrap;
 }
 
 .review-page .artist {
@@ -180,13 +222,52 @@ button {
     margin: 60px auto 20px;
     font-size: 2rem;
 }
-
-.review-page {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 60px 40px;
-    box-sizing: border-box;
+.rating {
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+    margin-bottom: 6px;
 }
+
+.rating-label {
+    min-width: 140px;
+}
+
+.ratings {
+    max-width: 700px;
+    margin: 30px auto 40px;
+}
+
+.review-text a {
+    color: var(--text);
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.review-text a:hover {
+    opacity: 0.6;
+}
+
+/* =========================
+   PULL QUOTES
+   ========================= */
+
+.pull-quote {
+    max-width: 700px;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.2;
+
+    margin-top: 20px;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-left: auto;
+}
+
+
+/* =========================
+   SOCIAL LINKS
+   ========================= */
 
 .social-links {
     margin-top: 40px;
@@ -203,13 +284,14 @@ button {
     opacity: 0.6;
 }
 
+
 /* =========================
    MOBILE LAYOUT
    ========================= */
 
 @media (max-width: 600px) {
 
-     nav {
+    nav {
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -219,7 +301,7 @@ button {
         line-height: 1;
         white-space: nowrap;
     }
-    
+
     .nav-links {
         position: fixed;
         bottom: 0;
@@ -237,10 +319,9 @@ button {
     }
 
     .review-card {
-       margin-top: 30px;
-       margin-right: 23px;
-       margin-bottom: 30px;
-       margin-left: 23px;
+        margin-top: 30px;
+        margin-right: 23px;
+        margin-bottom: 30px;
+        margin-left: 23px;
     }
-
 }
