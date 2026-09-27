@@ -46,7 +46,8 @@ Dummy Reviews
 
 const reviews = [
     "hotel-california.html",
-    "sweetheart-of-the-rodeo.html"
+    "sweetheart-of-the-rodeo.html",
+    "red-headed-stranger.html"
 ];
 
 function goToRandomReview() {
