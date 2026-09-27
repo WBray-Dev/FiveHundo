@@ -79,3 +79,66 @@ if (randomNav) {
 RIP random.html, 10 August–15 August 2026.
 It died doing fuck all. 🪦
 */
+
+/*
+Tough guy button
+*/
+
+
+const toughGuyButton = document.getElementById("toughGuyButton");
+const toughGuyReview = document.getElementById("toughGuyReview");
+const toughGuyRating = document.getElementById("toughGuyRating");
+
+if (toughGuyButton && toughGuyReview && toughGuyRating) {
+    let toughGuyLevel = 0;
+
+    const toughGuyStages = [
+        {
+            text: `
+                <p>Okay, it wasn’t too bad. I’ll give it 2 stars.</p>
+            `,
+            rating: "★★☆☆☆",
+            button: "YOU SURE?"
+        },
+        {
+            text: `
+                <p>Okay, it was pretty good. I’ll give it 3 stars.</p>
+            `,
+            rating: "★★★☆☆",
+            button: "TRY AGAIN"
+        },
+        {
+            text: `
+                <p>Alright, it was great. I’ll give it 4 stars.</p>
+            `,
+            rating: "★★★★☆",
+            button: "ONE MORE TIME"
+        },
+        {
+            text: `
+                <p>Madonna should live at the Rock and Roll Hall of Fame. This is the only CD that I have in my car. <em>Express Yourself</em> was my favourite track.</p>
+
+            `,
+            rating: "★★★★★",
+            button: "THAT'S WHAT I THOUGHT"
+        }
+    ];
+
+    toughGuyButton.addEventListener("click", () => {
+        if (toughGuyLevel >= toughGuyStages.length) {
+            return;
+        }
+
+        const stage = toughGuyStages[toughGuyLevel];
+
+        toughGuyReview.innerHTML = stage.text;
+        toughGuyRating.textContent = stage.rating;
+        toughGuyButton.textContent = stage.button;
+
+        toughGuyLevel++;
+
+        if (toughGuyLevel === toughGuyStages.length) {
+            toughGuyButton.disabled = true;
+        }
+    });
+}

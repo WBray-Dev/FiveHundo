@@ -411,3 +411,35 @@ nav {
     .news-item a:hover {
         opacity: 0.65;
     }
+
+       /* =========================
+    Tough Guy Button
+    ========================= */
+
+    #toughGuyButton {
+    display: block;
+    margin: 2rem auto;
+    padding: 0.8rem 1.2rem;
+    background: transparent;
+    color: inherit;
+    border: 1px solid currentColor;
+    border-radius: 4px;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.15s ease, opacity 0.15s ease;
+    }
+
+    #toughGuyButton:hover {
+        transform: translateY(-2px);
+    }
+
+    #toughGuyButton:active {
+        transform: translateY(0);
+    }
+
+    #toughGuyButton:disabled {
+        cursor: default;
+        opacity: 0.6;
+        transform: none;
+    }
